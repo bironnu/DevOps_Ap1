@@ -84,7 +84,7 @@
 	var name1 = 'Byron';
 	testResults('El nombre esta en mayusculas', name1.toUpperCase() === changeNameToUppercase(name1));
 	var dt = new Date();
-	testResults('El año es 2018', 2018 === dt.getFullYear());
+	testResults('El año es 2018', greeting('Byron').indexOf('2018') > -1);
   }
   (function() {
     testTheTruth();
